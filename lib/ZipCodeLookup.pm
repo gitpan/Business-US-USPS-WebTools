@@ -1,4 +1,4 @@
-# $Id: ZipCodeLookup.pm,v 1.3 2006/09/26 21:21:40 comdog Exp $
+# $Id: ZipCodeLookup.pm,v 1.6 2007/01/10 06:12:47 comdog Exp $
 package Business::US::USPS::WebTools::ZipCodeLookup;
 use strict;
 
@@ -7,7 +7,7 @@ use base qw(Business::US::USPS::WebTools);
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = '0.10_02';
+$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ m/ (\d+) \. (\d+) /xg;
 
 =head1 NAME
 
@@ -156,9 +156,10 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2006, brian d foy, All Rights Reserved.
+Copyright (c) 2006-2007 brian d foy.  All rights reserved.
 
-You may redistribute this under the same terms as Perl itself.
+This program is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 
 =cut
 

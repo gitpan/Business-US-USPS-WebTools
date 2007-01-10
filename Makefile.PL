@@ -1,4 +1,4 @@
-# $Id: Makefile.PL,v 1.4 2006/09/26 21:21:40 comdog Exp $
+# $Id: Makefile.PL,v 1.5 2007/01/10 05:37:53 comdog Exp $
 use ExtUtils::MakeMaker;
 
 eval "use Test::Manifest 1.14";
@@ -6,6 +6,7 @@ eval "use Test::Manifest 1.14";
 WriteMakefile(
 	'NAME'	       => 'Business::US::USPS::WebTools',
 	'VERSION_FROM' => 'lib/WebTools.pm',
+	'LICENSE'       => 'perl',
 
 	'PREREQ_PM'    => {
 		'Test::More'     => '0',
