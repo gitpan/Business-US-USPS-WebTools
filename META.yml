@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Business-US-USPS-WebTools
-version:             1.06
+version:             1.09
 abstract:            ~
 license:             perl
 generated_by:        ExtUtils::MakeMaker version 6.31

@@ -1,13 +1,14 @@
-# $Id: WebTools.pm,v 1.6 2007/01/10 06:12:47 comdog Exp $
+# $Id: WebTools.pm,v 1.9 2007/02/06 00:15:40 comdog Exp $
 package Business::US::USPS::WebTools;
 use strict;
+no warnings 'uninitialized';
 
 use Carp qw(croak);
 
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.9 $ =~ m/ (\d+) \. (\d+) /xg;
 
 =head1 NAME
 
@@ -123,8 +124,23 @@ sub _api_path {
 		"/ShippingAPITest.dll"
 		}
 
-sub _make_query_string { '' }
-
+sub _make_query_string
+	{
+	require URI;
+	
+	my( $self, $hash ) = @_;
+	
+	my $xml = $self->_make_query_xml( $hash );
+		
+	my $uri = URI->new;
+	$uri->query_form( 
+		API => $self->_api_name,
+		XML => $xml,
+		);
+		
+	$uri->query; # this should work, but doesn't
+	}
+	
 sub _make_url
 	{
 	my( $self, $hash ) = @_;

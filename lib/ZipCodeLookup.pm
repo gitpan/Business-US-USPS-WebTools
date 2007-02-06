@@ -1,13 +1,14 @@
-# $Id: ZipCodeLookup.pm,v 1.6 2007/01/10 06:12:47 comdog Exp $
+# $Id: ZipCodeLookup.pm,v 1.8 2007/02/06 00:14:32 comdog Exp $
 package Business::US::USPS::WebTools::ZipCodeLookup;
 use strict;
+no warnings 'uninitialized';
 
 use base qw(Business::US::USPS::WebTools);
 
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.6 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = sprintf "%d.%02d", q$Revision: 1.8 $ =~ m/ (\d+) \. (\d+) /xg;
 
 =head1 NAME
 
@@ -90,7 +91,7 @@ sub lookup_zipcode
 	
 sub _api_name { "ZipCodeLookup" }
 
-sub _make_query_string
+sub _make_query_xml
 	{
 	my( $self, $hash ) = @_;
 	
@@ -98,8 +99,7 @@ sub _make_query_string
 	my $pass = $self->password;
 	
 	my $xml = 
-		qq|API=| . $self->_api_name .
-		qq|&XML=<ZipCodeLookupRequest%20USERID="$user"%20PASSWORD="$pass">|  .
+		qq|<ZipCodeLookupRequest USERID="$user" PASSWORD="$pass">|  .
 		qq|<Address ID="0">|;
 
 	foreach my $field ( $self->_fields )
@@ -109,7 +109,7 @@ sub _make_query_string
 
 	$xml .= qq|</Address></ZipCodeLookupRequest>|;
 
-	$self->{query_string} = $xml;
+	return $xml;
 	}
 
 sub _parse_response
