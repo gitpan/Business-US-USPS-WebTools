@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: pod_coverage.t,v 1.1.1.1 2006/09/16 08:14:07 comdog Exp $
+# $Id: pod_coverage.t 1895 2006-09-16 08:14:06Z comdog $
 
 use Test::More;
 eval "use Test::Pod::Coverage 1.00";

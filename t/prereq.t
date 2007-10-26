@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: prereq.t,v 1.1.1.1 2006/09/16 08:14:07 comdog Exp $
+# $Id: prereq.t 1895 2006-09-16 08:14:06Z comdog $
 
 use Test::More;
 eval "use Test::Prereq";

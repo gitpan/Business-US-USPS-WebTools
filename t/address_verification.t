@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: address_verification.t,v 1.4 2007/02/06 00:14:33 comdog Exp $
+# $Id: address_verification.t 2122 2007-02-06 00:14:33Z comdog $
 
 # See http://www.usps.com/webtools/htm/Address-Information.htm for
 # the test requirements. The headings ( "Good response #1", etc )

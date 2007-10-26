@@ -1,4 +1,4 @@
-# $Id: load.t,v 1.2 2006/09/26 04:43:39 comdog Exp $
+# $Id: load.t 1902 2006-09-26 04:43:39Z comdog $
 BEGIN {
 	@classes = qw(
 		Business::US::USPS::WebTools

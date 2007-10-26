@@ -1,4 +1,4 @@
-$Id: README,v 1.2 2006/09/26 21:21:40 comdog Exp $
+$Id: README 1903 2006-09-26 21:21:40Z comdog $
 
 This module provides a Perl interface to the US Postal Service's
 Web Tools service. You need a UserID and Password to use these

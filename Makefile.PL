@@ -1,12 +1,14 @@
-# $Id: Makefile.PL,v 1.5 2007/01/10 05:37:53 comdog Exp $
+# $Id: Makefile.PL 2333 2007-10-26 03:04:19Z comdog $
 use ExtUtils::MakeMaker;
 
 eval "use Test::Manifest 1.14";
 
 WriteMakefile(
-	'NAME'	       => 'Business::US::USPS::WebTools',
-	'VERSION_FROM' => 'lib/WebTools.pm',
+	'NAME'	        => 'Business::US::USPS::WebTools',
+	'VERSION_FROM'  => 'lib/WebTools.pm',
+	'ABSTRACT'      => 'Use the US Postal Service Web Tools',
 	'LICENSE'       => 'perl',
+	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 
 	'PREREQ_PM'    => {
 		'Test::More'     => '0',

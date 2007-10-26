@@ -1,4 +1,4 @@
-# $Id: test_or_live.t,v 1.2 2006/09/26 21:21:40 comdog Exp $
+# $Id: test_or_live.t 1903 2006-09-26 21:21:40Z comdog $
 
 use Test::More 'no_plan';
 

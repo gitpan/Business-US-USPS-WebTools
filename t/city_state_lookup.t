@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: city_state_lookup.t,v 1.4 2007/02/06 00:14:33 comdog Exp $
+# $Id: city_state_lookup.t 2122 2007-02-06 00:14:33Z comdog $
 
 # See http://www.usps.com/webtools/htm/Address-Information.htm for
 # the test requirements. The headings ( "Good response #1", etc )

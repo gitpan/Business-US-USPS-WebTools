@@ -1,4 +1,4 @@
-# $Id: ZipCodeLookup.pm,v 1.8 2007/02/06 00:14:32 comdog Exp $
+# $Id: ZipCodeLookup.pm 2122 2007-02-06 00:14:33Z comdog $
 package Business::US::USPS::WebTools::ZipCodeLookup;
 use strict;
 no warnings 'uninitialized';
@@ -8,7 +8,7 @@ use base qw(Business::US::USPS::WebTools);
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 1.8 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = sprintf "%d.%02d", q$Revision: 2122 $ =~ m/ (\d+) \. (\d+) /xg;
 
 =head1 NAME
 
