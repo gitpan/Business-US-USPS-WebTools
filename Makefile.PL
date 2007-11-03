@@ -1,5 +1,7 @@
-# $Id: Makefile.PL 2333 2007-10-26 03:04:19Z comdog $
+# $Id: Makefile.PL 2360 2007-11-03 04:48:52Z comdog $
 use ExtUtils::MakeMaker;
+
+require 5.006;
 
 eval "use Test::Manifest 1.14";
 
@@ -15,6 +17,7 @@ WriteMakefile(
 		'Hash::AsObject' => '0',
 		'Test::Manifest' => 1.14,
 		'LWP::Simple'    => '0',
+		'URI'            => '0',
 		},
 
 	'PM'           => {

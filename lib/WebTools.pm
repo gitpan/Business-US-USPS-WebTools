@@ -1,4 +1,4 @@
-# $Id: WebTools.pm 2123 2007-02-06 00:15:40Z comdog $
+# $Id: WebTools.pm 2360 2007-11-03 04:48:52Z comdog $
 package Business::US::USPS::WebTools;
 use strict;
 no warnings 'uninitialized';
@@ -8,7 +8,7 @@ use Carp qw(croak);
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 2123 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = '1.11';
 
 =head1 NAME
 

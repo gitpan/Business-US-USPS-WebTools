@@ -1,4 +1,4 @@
-# $Id: CityStateLookup.pm 2122 2007-02-06 00:14:33Z comdog $
+# $Id: CityStateLookup.pm 2360 2007-11-03 04:48:52Z comdog $
 package Business::US::USPS::WebTools::CityStateLookup;
 use strict;
 no warnings 'uninitialized';
@@ -8,7 +8,7 @@ use base qw(Business::US::USPS::WebTools);
 use subs qw();
 use vars qw($VERSION);
 
-$VERSION = sprintf "%d.%02d", q$Revision: 2122 $ =~ m/ (\d+) \. (\d+) /xg;
+$VERSION = '1.11';
 
 =head1 NAME
 

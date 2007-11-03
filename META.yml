@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Business-US-USPS-WebTools
-version:             0.00
+version:             1.11
 abstract:            Use the US Postal Service Web Tools
 license:             perl
 generated_by:        ExtUtils::MakeMaker version 6.36
@@ -10,6 +10,7 @@ requires:
     LWP::Simple:                   0
     Test::Manifest:                1.14
     Test::More:                    0
+    URI:                           0
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.3.html
     version: 1.3
